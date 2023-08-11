@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <hr>
+
+    <!-- 
+        action: where do you want to send your data to
+        method: using POST or GET (default) method
+        enctype: encryption type: what things you want to include in yopur form
+        example:
+        application/x-www-form-urlencoded: The default value if the attribute is not specified.
+        multipart/form-data: The value used for an <input> element with the type attribute set to "file".
+        text/plain: (HTML5) noting other than text
+    -->
+
+    <!-- 
+        GET method: sends data in the from of url with '?' separator
+        attach all data together connected with '&'
+        -query lang.
+        -key value pair
+        -key:name 
+        -value:input text/number in the text/number field
+
+        POST method: data are included in the body of the form and send to the server
+     -->
+    <form action="" method="" enctype="">
+        <p>
+            <label for="">First Name</label>
+            <input type="text" name="fName" id="" required minlength="2" maxlength="30">
+        </p>
+        <p>
+            <label for="">Last Name</label>
+            <input type="text" name="lName" id="">
+        </p>
+
+        <p>
+            <label for="">Age</label>
+            <input type="number" name="" id="" min="18" max="55">
+        </p>
+
+        <p>
+            <label for="">Phone</label>
+            <input type="number" name="" id="">
+        </p>
+
+        <p>
+            <label for="">Email</label>
+            <input type="email" name="" id="">
+        </p>
+
+        <p>
+            <label for="">Password</label>
+            <input type="password" name="" id="">
+        </p>
+
+        <p>
+            <label for="">Facebook</label>
+            <input type="url" name="" id="">
+        </p>
+
+        <p>
+            <label for="">DOB</label>
+            <input type="date" name="" id="">
+            <input type="time" name="" id="">
+            <!-- <input type="datetime-local" name="" id=""> -->
+        </p>
+
+        <p>
+            <label for="">Comment</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <label for="">Gender</label>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="not">
+            <label for="not">Prefer not to say</label>
+        </p>
+
+        <p>
+            <label for="">Fruits:</label>
+            <select name="" id="">
+                <option value="">--select one--</option>
+                <option value="mango">Mango</option>
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="">Fruits:</label>
+            <select name="" id="" multiple>
+                <option value="">--select at least one--</option>
+                <option value="mango">Mango</option>
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="orange">Orange</option>
+                <option value="pear">Pear</option>
+                <option value="papaya">Papaya</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="">Attach file(s)</label>
+            <input type="file" name="" id="" multiple accept="image/png">
+        </p>
+
+        <p>
+            <input type="checkbox" name="" id="terms" required>
+            <label for="terms">I agree to the TC</label>
+        </p>
+
+        <p>
+            <input type="submit">
+            <!-- <button>Submit</button> -->
+        </p>
+    </form>
+
+</body>
+</html>
